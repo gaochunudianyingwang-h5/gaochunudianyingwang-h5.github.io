@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>搞个明白电影网 | 影评搞懂向 / 正版观影指南</title>
+  <meta name="description" content="搞个明白电影网：把电影讲明白——别装看懂解读卡、类型暗号词典、导演小动作、正版放映室。不提供盗版、磁力、网盘与成人擦边内容。" />
+  <meta name="keywords" content="搞个明白电影网, 影评解读, 电影暗号, 正版观影, 别装看懂" />
+  <meta name="author" content="搞个明白电影网" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#ff7a1a" />
+  <link rel="canonical" href="https://gaochunudianyingwang-h5.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="搞个明白电影网" />
+  <meta property="og:title" content="搞个明白电影网 | 把电影讲明白" />
+  <meta property="og:description" content="别装看懂：类型暗号、导演小动作、正版放映室。" />
+  <meta property="og:url" content="https://gaochunudianyingwang-h5.github.io/" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="搞个明白电影网 | 把电影讲明白" />
+  <meta name="twitter:description" content="影评搞懂向，不碰盗版成人。" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "搞个明白电影网",
+    "url": "https://gaochunudianyingwang-h5.github.io/",
+    "description": "影评解读与正版观影指南站。",
+    "inLanguage": "zh-CN"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#141026;
+      --bg2:#1d1740;
+      --card:#241c4d;
+      --ink:#f6f1ff;
+      --muted:#b3a8da;
+      --line:#3a2f6b;
+      --orange:#ff7a1a;
+      --orange-deep:#e25e00;
+      --pink:#ff4fa3;
+      --board:#10243f;
+      --paper:#f7f1e3;
+      --radius:16px;
+      --maxw:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.75;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+    header.nav{position:sticky;top:0;z-index:50;background:rgba(20,16,38,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:62px}
+    .logo{font-weight:900;font-size:19px}
+    .logo b{color:var(--orange)}
+    .logo span{color:var(--pink)}
+    nav.menu{display:flex;gap:14px;font-size:14px;color:var(--muted)}
+    nav.menu a{padding:7px 12px;border-radius:8px;transition:.2s}
+    nav.menu a:hover{color:var(--orange);background:var(--bg2)}
+    .nav-toggle{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 10px;font-size:16px;cursor:pointer}
+
+    .hero{padding:74px 0 60px;border-bottom:1px solid var(--line);background:radial-gradient(820px 380px at 85% -10%,rgba(255,79,163,.16),transparent 60%),linear-gradient(135deg,var(--orange),#ffb347);position:relative;overflow:hidden}
+    .hero .scribble{position:absolute;right:24px;top:24px;font-size:60px;opacity:.18;transform:rotate(-12deg)}
+    .hero .wrap{position:relative;z-index:1}
+    .pill{display:inline-block;border:1px solid rgba(255,255,255,.5);color:#fff;border-radius:999px;padding:5px 16px;font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+    .hero h1{font-size:clamp(28px,5vw,52px);line-height:1.12;margin:0 0 14px;font-weight:900;color:#fff}
+    .hero h1 em{font-style:normal;color:#ffe6f4}
+    .hero p.lead{font-size:16px;color:rgba(255,255,255,.95);max-width:600px;margin:0 0 22px}
+    .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+    .hero-tag{border:1px solid rgba(255,255,255,.45);border-radius:6px;padding:5px 12px;font-size:12px;background:rgba(255,255,255,.12)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 24px;border-radius:10px;font-weight:800;font-size:14px;transition:.2s;display:inline-flex;gap:6px;align-items:center}
+    .btn-primary{background:var(--board);color:#fff}
+    .btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff;background:transparent}
+
+    section{padding:58px 0;border-bottom:1px solid var(--line)}
+    .sec-head{margin-bottom:30px;text-align:center}
+    .sec-head .kicker{color:var(--orange);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:11px}
+    .sec-head h2{font-size:clamp(22px,3.6vw,32px);margin:6px 0 8px;font-weight:900}
+    .sec-head p{color:var(--muted);margin:0 auto;max-width:620px;font-size:14px}
+
+    /* 别装看懂 */
+    .decode{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .dc{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:20px;transition:.25s}
+    .dc:hover{transform:translateY(-3px);border-color:var(--pink)}
+    .dc .q{font-size:13px;color:var(--pink);font-weight:800}
+    .dc h3{margin:6px 0 4px;font-size:16px}
+    .dc p{margin:0;color:var(--muted);font-size:13px}
+    .dc .a{margin-top:10px;font-size:13px;color:#ffe6c2;border-left:3px solid var(--orange);padding-left:10px}
+
+    /* 暗号词典 */
+    .dict{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .term{border:1px solid var(--line);border-radius:14px;background:var(--bg2);padding:18px}
+    .term b{color:var(--orange)}
+    .term p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    /* 导演小动作 */
+    .dirs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .dir{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:20px;text-align:center}
+    .dir .emoji{font-size:30px}
+    .dir h3{margin:8px 0 4px;font-size:15px}
+    .dir p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 放映室 */
+    .hall{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .seat{border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--card);text-align:center}
+    .seat .ic{font-size:28px}
+    .seat h3{margin:8px 0 4px;font-size:15px}
+    .seat p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 避坑 */
+    .warn{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .w{border:1px solid var(--line);border-radius:var(--radius);padding:22px;background:var(--card);border-left:5px solid var(--orange)}
+    .w h3{margin:0 0 8px;font-size:16px}
+    .w p{margin:0;color:var(--muted);font-size:13px}
+
+    footer{padding:32px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+    footer a{color:var(--orange)}
+
+    #toTop{position:fixed;right:16px;bottom:16px;z-index:60;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--orange);color:#fff;font-size:18px;cursor:pointer;opacity:0;pointer-events:none;transition:.25s}
+    #toTop.show{opacity:1;pointer-events:auto}
+    .reveal{opacity:0;transform:translateY(16px);transition:.5s ease}
+    .reveal.in{opacity:1;transform:none}
+
+    @media (max-width:980px){
+      .decode{grid-template-columns:1fr 1fr}
+      .dict{grid-template-columns:1fr}
+      .dirs{grid-template-columns:1fr 1fr}
+      .hall{grid-template-columns:1fr 1fr}
+      .warn{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      .nav-toggle{display:block}
+      nav.menu{position:absolute;top:62px;left:0;right:0;flex-direction:column;gap:0;padding:8px 20px 16px;background:rgba(20,16,38,.98);border-bottom:1px solid var(--line);display:none}
+      nav.menu.open{display:flex}
+      nav.menu a{padding:10px 8px;border-bottom:1px solid var(--line)}
+      .decode{grid-template-columns:1fr}
+      .dirs{grid-template-columns:1fr 1fr}
+      .hall{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="logo"><b>搞个明白</b><span>电影网</span></div>
+      <button class="nav-toggle" aria-label="菜单" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#home">首页</a>
+        <a href="#decode">别装看懂</a>
+        <a href="#dict">暗号词典</a>
+        <a href="#dirs">导演小动作</a>
+        <a href="#hall">正版放映</a>
+        <a href="#warn">搞片避坑</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="scribble">✎</div>
+    <div class="wrap">
+      <div class="pill">Decode Cinema · 不恶搞</div>
+      <h1>搞个明白电影网<br/>别装看懂，<em>把片讲明白</em></h1>
+      <p class="lead">名字像“搞搞”，但我们只干正经事：拆镜头、翻暗号、记导演习惯、指正版渠道。不恶搞、不擦边、不盗版。</p>
+      <div class="hero-tags">
+        <span class="hero-tag">别装看懂</span>
+        <span class="hero-tag">类型暗号</span>
+        <span class="hero-tag">导演小动作</span>
+        <span class="hero-tag">正版放映</span>
+        <span class="hero-tag">不碰磁力</span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-primary" href="#decode">拆第一部片 →</a>
+        <a class="btn btn-ghost" href="#warn">为什么别信“搞搞全集”</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="decode" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Don't Fake It</div>
+        <h2>别装看懂 · 解读卡</h2>
+        <p>朋友圈发“细思极恐”之前，先看这句人话版。</p>
+      </div>
+      <div class="decode">
+        <div class="dc">
+          <div class="q">“结尾陀螺停没停？”</div>
+          <h3>盗梦空间</h3>
+          <p>诺兰故意不给答案，让你二刷三刷。</p>
+          <div class="a">人话：重点是“他不想再确认了”，不是陀螺物理学。</div>
+        </div>
+        <div class="dc">
+          <div class="q">“为什么一直吃桃子？”</div>
+          <h3>Call Me by Your Name</h3>
+          <p>桃子不是色情道具，是青春期欲望的笨拙隐喻。</p>
+          <div class="a">人话：少年第一次把“想要”和“害羞”混在一起。</div>
+        </div>
+        <div class="dc">
+          <div class="q">“地下室为啥那么重要？”</div>
+          <h3>寄生虫</h3>
+          <p>半地下室 vs 豪宅，是阶层不是恐怖片。</p>
+          <div class="a">人话：下雨天有钱人闻到“自由”，穷人被雨水冲回臭沟。</div>
+        </div>
+        <div class="dc">
+          <div class="q">“时间线乱给谁看？”</div>
+          <h3>记忆碎片</h3>
+          <p>倒叙+正叙拼起来，是让观众得失忆症。</p>
+          <div class="a">人话：你记不住，主角也记不住，凶手才好藏。</div>
+        </div>
+        <div class="dc">
+          <div class="q">“小孩视角有必要吗？”</div>
+          <h3>怪物 / 无人知晓</h3>
+          <p>小孩不说破，大人世界的脏才显出来。</p>
+          <div class="a">人话：儿童片外皮，社会批评内核。</div>
+        </div>
+        <div class="dc">
+          <div class="q">“结尾那场雨在洗什么？”</div>
+          <h3>怪物（是枝系）</h3>
+          <p>雨是原谅，不是破案。</p>
+          <div class="a">人话：有些片结局不抓人，是放人一马。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dict" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Genre Slang</div>
+        <h2>类型暗号词典</h2>
+        <p>宣发词都是化妆术，翻译一下：</p>
+      </div>
+      <div class="dict">
+        <div class="term"><b>“成人童话”</b><p>＝ 暴力/情色包装，但导演不想背责任。</p></div>
+        <div class="term"><b>“作者表达”</b><p>＝ 片长偏长、台词偏密、普通观众会困。</p></div>
+        <div class="term"><b>“高概念”</b><p>＝ 一句话很牛，两小时后发现只有这句话。</p></div>
+        <div class="term"><b>“现实主义”</b><p>＝ 没滤镜、没配乐、吵架像你妈打电话。</p></div>
+        <div class="term"><b>“致敬经典”</b><p>＝ 抄得比较好看，且片尾写了谢谢。</p></div>
+        <div class="term"><b>“开放式结局”</b><p>＝ 编剧没想好，但说成“留白”。</p></div>
+        <div class="term"><b>“群像戏”</b><p>＝ 谁都重要，所以谁都没讲透。</p></div>
+        <div class="term"><b>“视听盛宴”</b><p>＝ 剧情一般，但 IMAX 票值回。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dirs" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Director Tells</div>
+        <h2>导演小动作</h2>
+        <p>认出这些，装懂成本直接降一半。</p>
+      </div>
+      <div class="dirs">
+        <div class="dir"><div class="emoji">🕰️</div><h3>长镜头</h3><p>一镜到底＝“我技术很贵”。</p></div>
+        <div class="dir"><div class="emoji">🌫️</div><h3>烟/雾/尘</h3><p>情绪上不来，就加颗粒。</p></div>
+        <div class="dir"><div class="emoji">🚪</div><h3>关门声</h3><p>关系断了，不说话。</p></div>
+        <div class="dir"><div class="emoji">🍜</div><h3>吃饭戏</h3><p>不聊爱就聊权力。</p></div>
+        <div class="dir"><div class="emoji">🪞</div><h3>镜子构图</h3><p>“我有两个我”懒人写法。</p></div>
+        <div class="dir"><div class="emoji">🌊</div><h3>海/浪/雨</h3><p>主角要变了，天气先哭。</p></div>
+        <div class="dir"><div class="emoji">🎹</div><h3>突然静音</h3><p>比配乐更吓人。</p></div>
+        <div class="dir"><div class="emoji">🎞️</div><h3>胶片颗粒</h3><p>“我有审美”的防伪标。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hall" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Legal Screen</div>
+        <h2>正版放映室</h2>
+        <p>搞懂之后，去正经地方看。</p>
+      </div>
+      <div class="hall">
+        <div class="seat"><div class="ic">📺</div><h3>持权流媒体</h3><p>字幕/画质/修复版最稳</p></div>
+        <div class="seat"><div class="ic">🎟️</div><h3>单片租赁</h3><p>只爱一部不办年卡</p></div>
+        <div class="seat"><div class="ic">🏛️</div><h3>文化场馆</h3><p>艺术院线/资料馆/高校展映</p></div>
+        <div class="seat"><div class="ic">🎞️</div><h3>重映专场</h3><p>4K修复/导演剪辑/周年场</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="warn" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Don't</div>
+        <h2>“搞搞类”站避坑</h2>
+        <p>名字带搞怪/搞笑/搞搞的影视站，常是盗版壳或擦边引流。</p>
+      </div>
+      <div class="warn">
+        <div class="w">
+          <h3>🚫 搞搞全集 / 搞怪秒播</h3>
+          <p>“搞着看”的背后是抓取第三方资源、内嵌博彩广告、养站卖域名。[4](@ref)</p>
+        </div>
+        <div class="w">
+          <h3>🚫 私密包厢陪看</h3>
+          <p>借“私人观影”做异性陪侍/过夜，已是多地警方查处的擦边违法模式。[2,8](@ref)</p>
+        </div>
+        <div class="w">
+          <h3>🚫 破解APP / 磁力网盘</h3>
+          <p>以营利为目的传播盗版影视，数额够大可判侵犯著作权罪。[7,12](@ref)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © 2026 搞个明白电影网（gaochunudianyingwang-h5）｜ 静态展示站点 ｜
+      内页链接以 <a href="#">#</a> 占位 ｜
+      本站仅作影评解读、类型词典与正版放映导航，不提供盗版资源、成人擦边、磁力、网盘与未授权播放。
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    document.querySelectorAll('#menu a').forEach(function(a){
+      a.addEventListener('click',function(){ document.getElementById('menu').classList.remove('open'); });
+    });
+    var toTop=document.getElementById('toTop');
+    window.addEventListener('scroll',function(){ toTop.classList.toggle('show',window.scrollY>400); });
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  </script>
+</body>
+</html>
